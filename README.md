@@ -30,7 +30,7 @@ https://trello.com/b/VRO8YNOO/pasarelastrip
 https://przrqh.axshare.com/start.html
 
 #### Video
-
+https://youtu.be/HUMzzp9xUDw
 
 #### Autores
 

@@ -1,5 +1,27 @@
 # DSM_PasareladePago
 Aplicacion creada en React Native con pasarela de apagos integrada (Stripe).
+
+# Herramientas:
+
+#### •	Nodejs https://nodejs.org/es/
+#### •	Visual Estudio Code (sugerido) https://code.visualstudio.com/download
+#### •	Software Developer Kit de Java https://www.oracle.com/java/technologies/javase-downloads.html
+#### •	Android Studio: https://developer.android.com/studio
+#### •	Stripe https://dashboard.stripe.com/login_success?redirect=%2F
+
+# Instalaciones:
+
+npm install @react-navigation/stack
+
+npm install react-native-gesture-handler
+
+npm install @react-native-masked-view/masked-view
+
+npm install @stripe/stripe-react-native
+
+npm i --save react-native-credit-card-input
+
+
 # Links
 #### Trello
 https://trello.com/b/VRO8YNOO/pasarelastrip
@@ -8,7 +30,7 @@ https://trello.com/b/VRO8YNOO/pasarelastrip
 https://przrqh.axshare.com/start.html
 
 #### Video
-
+https://youtu.be/HUMzzp9xUDw
 
 #### Autores
 

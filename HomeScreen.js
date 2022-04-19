@@ -12,28 +12,32 @@ const HomeScreen =({navigation}) => {
 
   return (
         <SafeAreaView style={styles.container}>
-     
+     <Image source={require('./assets/a1.jpeg')} style={{width: 100,
+    height: 100}}/>
         <View style={styles.viewtitle}>
-      <Text style={styles.txttitulo}>Bienvenido</Text>
+        
+      <Text style={styles.txttitulo} >BIENVENIDO</Text>
       </View>
-      <View style={{width:'100%', height:'100%'}}>
-    
- <Text>Ingresa tu numero de registro para consultar tus facturas</Text>
- <TextInput
+      <View style={{height:'45%', marginHorizontal:"4%", borderRadius:23, backgroundColor: "#004AAD", padding:"8%"}}>
+      <Text style={{fontSize:18, color:'white'}}>Ingresa tu numero de registro para consultar tus facturas:</Text>
+      <TextInput
         style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="useless placeholder"
+        placeholder="numero de cliente"
         keyboardType="numeric"
-      />
+        maxLength={3}
+        
+       />
      
      <TouchableOpacity 
      onPress={() =>
        navigation.navigate('Cuota')
-      }
-     ><Text>Couta</Text></TouchableOpacity>
-         
+      } style={{marginTop:"20%", alignSelf:'center', borderRadius:8, backgroundColor:"#7ED957", height:'30%', width:250, alignItems:'center'}}
+     ><Text style={{marginTop:22, fontSize:18, fontWeight:'bold', color:'#3B3933'}}>Ver coutas</Text></TouchableOpacity>
       </View>
+    
+      
+         
+      
 </SafeAreaView>
   )
 }
@@ -51,7 +55,7 @@ container:{
 viewtitle:{
 width:'100%',
 height:75,
-backgroundColor:'#154C59',
+backgroundColor:'#004AAD',
 marginBottom:'5%'
 },
 img:{
@@ -74,6 +78,15 @@ scrollviewestyle:{
   width:475,
   alignContent:'center',
  
-}
+},
+input:{
+  height:60,
+  backgroundColor:"rgba(255,255,252,0.9)",
+  marginTop:10,
+  fontSize:18,
+  borderRadius:8,
+  paddingHorizontal:"5%",
+  color:'#3B3933'
+},
 
   })

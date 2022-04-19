@@ -9,26 +9,61 @@ const CuotaScreen =({navigation}) => {
         <SafeAreaView style={styles.container}>
      
         <View style={styles.viewtitle}>
-      <Text style={styles.txttitulo}>SERVICIOS</Text>
+      <Text style={styles.txttitulo}>MENSUALIDAD</Text>
       </View>
+      
+      <View style={{height:500, marginHorizontal:"4%", borderRadius:23, backgroundColor: "#3B3933", padding:"8%", width:300}}>
       <ScrollView style={styles.scrollviewestyle}>
-      <View style={{width:'100%', height:'100%'}}>
-     <Text>Hoi</Text>
-     <TouchableOpacity 
-     onPress={() =>
-       navigation.navigate('Home')
-      }
-     ><Text>Holisw</Text></TouchableOpacity>
-      <TouchableOpacity 
-     onPress={() =>
-       navigation.navigate('Stripe')
-      }
-     ><Text>Stripe</Text></TouchableOpacity>
-         
+        <View style={{height:100, marginVertical:"4%", borderRadius:23, backgroundColor: "#7ED957", width:"100%", position:'absolute', padding:17}}>
+              <Text style={styles.month}>Enero</Text>
+              <Text style={styles.price}>18.99</Text>
+              <View style={styles.botonbuy}>
+                <TouchableOpacity 
+                  onPress={() =>
+                    navigation.navigate('Stripe')
+                    }
+                  ><Text style={styles.buy}>Pagar</Text></TouchableOpacity>
+              </View>
+            
+        </View>
+        <View style={{height:100, marginTop:"55%", borderRadius:23, backgroundColor: "#7ED957", width:"100%", position:'absolute', padding:17}}>
+              <Text style={styles.month}>Febrero</Text>
+              <Text style={styles.price}>18.99</Text>
+              <View style={styles.botonbuy}>
+                <TouchableOpacity 
+                  onPress={() =>
+                    navigation.navigate('Stripe')
+                    }
+                  ><Text style={styles.buy}>Pagar</Text></TouchableOpacity>
+              </View>
+        </View>
+        <View style={{height:100, marginTop:255, borderRadius:23, backgroundColor: "#7ED957", width:"100%", position:'absolute', padding:17}}>
+              <Text style={styles.month}>Marzo</Text>
+              <Text style={styles.price}>18.99</Text>
+              <View style={styles.botonbuy}>
+                <TouchableOpacity 
+                  onPress={() =>
+                    navigation.navigate('Stripe')
+                    }
+                  ><Text style={styles.buy}>Pagar</Text></TouchableOpacity>
+              </View>
+        </View>
+        <View style={{height:100, marginTop:380, borderRadius:23, backgroundColor: "#7ED957", width:"100%", position:'absolute', padding:17}}>
+              <Text style={styles.month}>Abril</Text>
+              <Text style={styles.price}>18.99</Text>
+              <View style={styles.botonbuy}>
+                <TouchableOpacity 
+                  onPress={() =>
+                    navigation.navigate('Stripe')
+                    }
+                  ><Text style={styles.buy}>Pagar</Text></TouchableOpacity>
+              </View>
+        </View>
+        </ScrollView>
       </View>
       
       
-      </ScrollView>
+      
 </SafeAreaView>
   )
 }
@@ -46,15 +81,8 @@ container:{
 viewtitle:{
 width:'100%',
 height:75,
-backgroundColor:'#154C59',
+backgroundColor:'#004AAD',
 marginBottom:'5%'
-},
-img:{
-  width:400,
-  height:250,
-  marginTop: 20,
-  borderRadius: 12,
-  marginLeft:'8%'
 },
 txttitulo:{
   fontSize:30,
@@ -65,10 +93,32 @@ txttitulo:{
   marginTop:'5%',
   fontWeight:'bold'
 },
-scrollviewestyle:{
-  width:475,
-  alignContent:'center',
- 
+month:{
+  fontWeight:'bold',
+  fontSize:35
+},
+price:{
+  fontWeight:'bold',
+  color:'#FFFFFF',
+  fontSize:27,
+},
+botonbuy:{
+  position:'absolute',
+  alignSelf:'flex-end',
+  marginRight:"19%",
+  marginTop:"30%",
+  backgroundColor:'#004AAD',
+  borderRadius:23,  
+  width: 80,
+  height:30
+  
+},
+buy:{
+  fontSize: 25,
+  textAlign:'center',
+  marginTop:'12%',
+  fontWeight:'bold',
+  color:'#FFFFFF'
 }
 
   })

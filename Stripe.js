@@ -90,7 +90,7 @@ const StripeGateway = ({navigation}) => {
       console.log('pament_data', pament_data);
       if(pament_data.status == 'succeeded')
       {
-        alert("PAGO EXITOSO");
+        alert("PAGO DE FEBRERO EXITOSO");
       }
       else{
         alert('PAGO FALLIDO');
@@ -103,7 +103,7 @@ const StripeGateway = ({navigation}) => {
   const charges = async () => {
 
     const card = {
-        'amount': 50, 
+        'amount': 1899, 
         'currency': CURRENCY,
         'source': CARD_TOKEN,
         'description': "Coutas"
@@ -135,10 +135,10 @@ const StripeGateway = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <View>
-         <Text style={{fontSize: 30, color: 'blue',
+      <View style={{height:100, marginHorizontal:"9%", borderRadius:23, marginTop:100, backgroundColor: "#3B3933", padding:"2%", width:300}}>
+         <Text style={{fontSize: 25, color: 'blue',
          textAlign:'center', fontWeight:'bold',
-         margin: 20}}>Cancela Tus Coutas AQUI</Text>
+         margin: 10, color:'#ffff'}}>Cancela tu mensualidad aca</Text>
       </View>
         
       <LiteCreditCardInput 
@@ -154,7 +154,7 @@ const StripeGateway = ({navigation}) => {
       style={styles.button}>
         <Text
           style={styles.buttonText}>
-          Pay
+          Pagar
         </Text>
       </TouchableOpacity>
 
@@ -180,32 +180,35 @@ const styles = StyleSheet.create({
     
   },
   button : {
-    backgroundColor:'#2471A3',
+    backgroundColor:'#7ED957',
     width:150,
     height:45,
     alignSelf:'center',
     justifyContent:'center',
     alignItems:'center',
-    marginTop:20,
+    marginTop:30,
     color: 'blue',
     borderRadius: 12,
     
+    
   },
   buttonText : {
-    fontSize: 15,
-    color: '#f4f4f4',
+    fontSize: 20,
+    color: '#ffffff',
     fontWeight:'bold',
-    textTransform:'uppercase'
+    textTransform:'uppercase',
+    
   },
   inputContainerStyle : {
     backgroundColor:'black',
   },
   inputStyle : {
     elevation: 2,
-    backgroundColor:"#222242",
+    backgroundColor:"#004AAD",
     paddingLeft:15,
     borderRadius:5,
-    color:'white'
+    color:'white',
+    marginTop:70,
   },
   labelStyle : {
     marginBottom:5,

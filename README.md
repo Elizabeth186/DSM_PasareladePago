@@ -5,7 +5,7 @@ Aplicacion creada en React Native con pasarela de apagos integrada (Stripe).
 https://trello.com/b/VRO8YNOO/pasarelastrip
 
 #### Mock Ups
-
+https://przrqh.axshare.com/start.html
 
 #### Video
 

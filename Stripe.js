@@ -90,7 +90,7 @@ const StripeGateway = ({navigation}) => {
       console.log('pament_data', pament_data);
       if(pament_data.status == 'succeeded')
       {
-        alert("PAGO DE FEBRERO EXITOSO");
+        alert("PAGO DE MENSUALIDAD EXITOSO");
       }
       else{
         alert('PAGO FALLIDO');
